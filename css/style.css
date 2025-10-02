@@ -23,16 +23,72 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 322px;
-    height: 630px;
+    width: 272px;
+    height: 584px;
+    border-radius: 30px;
+    box-shadow: 5px 10px 12px rgba(0, 0, 0, 0.521);
     background: url('../img/phone-iframe.png') no-repeat center;
 }
 
 #display {
     position: relative;
-    top: 30px;
-    left: 34px;
+    top: 7px;
+    left: 7px;
     border-radius: 19px;
     width: 255px;
     height: 568px;
+}
+
+#cam {
+    position: relative;
+    top: -560px;
+    left: 123px;
+    width: 25px;
+    height: 25px;
+    z-index: 10;
+    background: url('../img/cam.png');
+}
+
+#social-icons {
+    position: absolute;
+    top: 20px;
+    left: 280px;
+    width: 65px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 6px 10px 0px rgba(0, 0, 0, 0.545);
+    background-image: linear-gradient(to bottom right, rgba(169, 169, 169, 0.350), rgba(0, 0, 0, 0.250), rgba(0, 0, 0, 0.250), rgba(169, 169, 169, 0.350));
+}
+
+#social-icons ul {
+    width: fit-content;
+    margin: auto;
+    list-style: none;
+}
+
+#social-icons a {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.433);
+    background-image: radial-gradient(rgba(0, 0, 0, 0.364) 25%, #66020491);
+    box-sizing: border-box;
+}
+
+#social-icons a:hover {
+    border: solid #66020450;
+    transform: translate(-3px, -3px);
+    box-shadow: 3px 6px 5px rgba(0, 0, 0, 0.285);
+    transition: transform .2s, border .1s, box-shadow .2s;
+}
+
+#social-icons img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35px;
 }
