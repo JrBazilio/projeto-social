@@ -11,11 +11,18 @@ html, body {
     height: 100dvh;
 }
 
+body {
+    position: relative;
+    background-image: linear-gradient(to bottom right, #660204, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), #660204);
+}
+
 main {
     position: relative;
-    width: 100dvw;
-    height: 100dvh;
-    background-image: linear-gradient(to bottom right, #660204, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), #660204);
+    top: 50%;
+    left: 50%;
+    max-width: 450px;
+    height: 580px;
+    transform: translate(-50%, -50%);
 }
 
 #phone {
@@ -52,7 +59,7 @@ main {
 #social-icons {
     position: absolute;
     top: 20px;
-    left: 280px;
+    right: 0px;
     width: 65px;
     padding: 10px;
     border-radius: 20px;
