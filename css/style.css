@@ -34,9 +34,9 @@ main {
     position: relative;
     top: 7px;
     left: 7px;
-    border-radius: 19px;
     width: 255px;
     height: 568px;
+    border-radius: 19px;
 }
 
 #cam {
